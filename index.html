@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>bootstrap single page website</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+      integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body data-target=".navbar" data-spy="scroll" data-offset="50">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <a class="navbar-brand" href="#"
+        ><img src="images/mylogo.png" alt=""
+      /></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- header -->
+    <section id="header" class="container-fluid py-5">
+      <div class="text-center">
+        <img src="images/avataaars.png" alt="" />
+        <h1>Tushar Mehra</h1>
+        <div class="custom-divider">
+          <div class="divider-custom-line"></div>
+          <div class="divider-custom-icon">
+            <i class="fas fa-3x fa-star"></i>
+          </div>
+          <div class="divider-custom-line"></div>
+        </div>
+        <h3>web developer</h3>
+      </div>
+    </section>
+    <!-- about -->
+    <section id="about" class="container-fluid">
+      <h2 class="display-4">About me</h2>
+      <div class="custom-divider color-dark">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-3x fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 pt-5">
+            <div class="container-fluid">
+              <img class="img-fluid" src="images\project-6.jpg" alt="" />
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-center pt-5">
+            <div class="text lead text-left ml-md-4">
+              <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Aliquid commodi minus sequi totam ipsa ut quod beatae animi,
+                magnam error nihil nobis nisi velit impedit. Corporis
+                consequuntur nostrum eum dolor?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- projects -->
+    <section id="projects" class="container-fluid">
+      <h2 class="text-center display-4">Projects</h2>
+      <div class="custom-divider color-dark">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-3x fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+      <!-- Button trigger modal -->
+      <div class="container-fluid pt-4">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <a data-toggle="modal" data-target="#exampleModal6">
+              <div class="img-div">
+                <div class="overlay"><i class="fas fa-plus fa-3x"></i></div>
+                <img
+                  class="img-fluid project"
+                  src="images/projects/cabin.png"
+                  alt=""
+                />
+              </div>
+            </a>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal6"
+              tabindex="-1"
+              aria-labelledby="exampleModal6Label"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModal6Label">
+                      Image
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container-fluid">
+                      <img
+                        class="img-fluid"
+                        src="images/projects/cabin.png"
+                        alt=""
+                      />
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Maxime, maiores tenetur quae voluptatem vero asperiores
+                        harum animi, non quas error, itaque excepturi nesciunt
+                        nihil obcaecati minus blanditiis totam cum architecto.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer d-flex justify-content-center">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                      data-toggle="modal"
+                      data-target="exampleModal6"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <a data-toggle="modal" data-target="#exampleModal5">
+              <div class="img-div">
+                <div class="overlay"><i class="fas fa-plus fa-3x"></i></div>
+                <img
+                  class="img-fluid project"
+                  src="images/projects/cake.png"
+                  alt=""
+                />
+              </div>
+            </a>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal5"
+              tabindex="-1"
+              aria-labelledby="exampleModal5Label"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModal5Label">
+                      Image
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container-fluid">
+                      <img
+                        class="img-fluid"
+                        src="images/projects/cake.png"
+                        alt=""
+                      />
+                      <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Maxime porro accusantium qui exercitationem
+                        labore! Itaque animi id libero pariatur voluptas culpa,
+                        dicta, architecto dolorem nesciunt sapiente iste
+                        consequuntur tempora cumque.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer d-flex justify-content-center">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                      data-toggle="modal"
+                      data-target="exampleModal5"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <a data-toggle="modal" data-target="#exampleModal4">
+              <div class="img-div">
+                <div class="overlay"><i class="fas fa-plus fa-3x"></i></div>
+                <img
+                  class="img-fluid project"
+                  src="images/projects/safe.png"
+                  alt=""
+                />
+              </div>
+            </a>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal4"
+              tabindex="-1"
+              aria-labelledby="exampleModal4Label"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModal4Label">
+                      Image
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container-fluid">
+                      <img
+                        class="img-fluid"
+                        src="images/projects/safe.png"
+                        alt=""
+                      />
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Totam pariatur eum doloremque sunt deserunt
+                        officia voluptate in obcaecati tempore, quasi vitae
+                        reiciendis assumenda perferendis illo provident incidunt
+                        veritatis voluptatum magni?
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer d-flex justify-content-center">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                      data-toggle="modal"
+                      data-target="exampleModal4"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <a data-toggle="modal" data-target="#exampleModal3">
+              <div class="img-div">
+                <div class="overlay"><i class="fas fa-plus fa-3x"></i></div>
+                <img
+                  class="img-fluid project"
+                  src="images/projects/circus.png"
+                  alt=""
+                />
+              </div>
+            </a>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal3"
+              tabindex="-1"
+              aria-labelledby="exampleModal3Label"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModal3Label">
+                      Image
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container-fluid">
+                      <img
+                        class="img-fluid"
+                        src="images/projects/circus.png"
+                        alt=""
+                      />
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Eum, enim! Unde, porro ex, eum illo necessitatibus hic
+                        cum commodi eos mollitia harum placeat quibusdam
+                        voluptatum dolore accusantium odio dignissimos
+                        blanditiis.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer d-flex justify-content-center">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                      data-toggle="modal"
+                      data-target="exampleModal3"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <a data-toggle="modal" data-target="#exampleModal2">
+              <div class="img-div">
+                <div class="overlay"><i class="fas fa-plus fa-3x"></i></div>
+                <img
+                  class="img-fluid project"
+                  src="images/projects/submarine.png"
+                  alt=""
+                />
+              </div>
+            </a>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal2"
+              tabindex="-1"
+              aria-labelledby="exampleModal2Label"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModal2Label">
+                      Image
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container-fluid">
+                      <img
+                        class="img-fluid"
+                        src="images/projects/submarine.png"
+                        alt=""
+                      />
+                      <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Consequatur voluptates recusandae quisquam
+                        incidunt perferendis soluta culpa deleniti quae?
+                        Consequatur saepe ipsum voluptate numquam eveniet non
+                        fugit ea assumenda officia quos.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer d-flex justify-content-center">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                      data-toggle="modal"
+                      data-target="exampleModal2"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <a data-toggle="modal" data-target="#exampleModal1">
+              <div class="img-div">
+                <div class="overlay"><i class="fas fa-plus fa-3x"></i></div>
+                <img
+                  class="img-fluid project"
+                  src="images/projects/game.png"
+                  alt=""
+                />
+              </div>
+            </a>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal1"
+              tabindex="-1"
+              aria-labelledby="exampleModal1Label"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-center" id="exampleModal1Label">
+                      Image
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container-fluid">
+                      <img
+                        class="img-fluid"
+                        src="images/projects/game.png"
+                        alt=""
+                      />
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Doloribus quam numquam, ipsum voluptas vel non
+                        reprehenderit placeat veniam corporis id unde expedita
+                        culpa, minima molestias commodi iste minus harum. Ullam.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="modal-footer d-flex justify-content-center">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                      data-target="exampleModal1"
+                      data-toggle="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="container-fluid p-4">
+      <h2 class="text-center display-4">Contact</h2>
+      <div class="custom-divider color-dark">
+        <div class="divider-custom-line"></div>
+        <div class="divider-custom-icon">
+          <i class="fas fa-3x fa-star"></i>
+        </div>
+        <div class="divider-custom-line"></div>
+      </div>
+      <div class="container-lg">
+        <form
+          action="mailto:tusharmehra052@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <div class="form-group pt-3">
+            <input
+              type="email"
+              name="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              required
+            />
+            <label for="exampleInputEmail1"
+              ><span class="content-name">Email</span></label
+            >
+          </div>
+          <div class="form-group">
+            <input
+              type="password"
+              class="form-control"
+              name="email"
+              id="exampleInputPassword1"
+              required
+            />
+            <label for="exampleInputPassword1"
+              ><span class="content-name">Password</span>
+            </label>
+          </div>
+          <div class="form-group">
+            <textarea
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              rows="3"
+              name="message"
+              required
+            ></textarea>
+            <label for="exampleFormControlTextarea1"
+              ><span class="content-name">Message</span></label
+            >
+          </div>
+          <button type="submit" id="form-btn" class="btn btn-block btn-primary">
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="py-3 m-0 text-center text-white">
+      <p>&copy; copyright 2020</p>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <script></script>
+  </body>
+</html>
